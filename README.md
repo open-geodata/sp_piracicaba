@@ -2,6 +2,7 @@
 
 <br>
 
+
 Em janeiro de 2021, peguei o arquivo *Mapa_1_2_3_4_macrozonas_zonas_PLC.dwg* e extrai os seguintes *layers*:
 
 - **Divisão Municipal** (*Divisa_Municipal.shp*), que contem o limite territorial do município;
