@@ -2,13 +2,8 @@ from setuptools import setup, find_packages
 
 
 
-
-
 with open('README.md', 'r') as f:
-    long_description = f.read()
-
-    
-    
+    long_description = f.read()    
     
 requirements = []
 for line in open('requirements.txt'):
@@ -16,8 +11,12 @@ for line in open('requirements.txt'):
     if not li.startswith('#'):
         requirements.append(line.rstrip())
 
-VERSION = (0, 0, 1)
+VERSION = (0, 0, 10)
 __version__ = '.'.join(map(str, VERSION))
+
+
+
+
 
 setup(
     name='sp_piracicaba',
