@@ -61,7 +61,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'data/output/maps'
+          source-directory: 'src/sp_piracicaba/data/output/maps'
           user-name: michelmetran
           user-email: michelmetran@gmail.com
 
