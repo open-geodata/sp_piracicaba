@@ -5,7 +5,6 @@
 # Dados
 src/sp_piracicaba/data/input
 src/sp_piracicaba/data/output/*
-src/sp_piracicaba/data/output/geo
 !src/sp_piracicaba/data/output/maps/
 !src/sp_piracicaba/data/output/zips/
 
