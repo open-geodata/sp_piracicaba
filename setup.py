@@ -9,11 +9,11 @@ for line in open('requirements.txt'):
     if not li.startswith('#'):
         requirements.append(line.rstrip())
 
-VERSION = (0, 0, 2)
+VERSION = (0, 0, 1)
 __version__ = '.'.join(map(str, VERSION))
 
 setup(
-    name='sp_bh_pcj_2020_2035',
+    name='sp_piracicaba',
     version=__version__,
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
