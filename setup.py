@@ -1,5 +1,9 @@
 from setuptools import setup, find_packages
 
+
+
+
+
 with open('README.md', 'r') as f:
     long_description = f.read()
 
@@ -23,7 +27,7 @@ setup(
     description='Compartilhamento de Dados Espaciais',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/open-geodata/sp_ff_apa-corumbatai',
+    url='https://github.com/open-geodata/sp_piracicaba',
     keywords='python, dados espaciais, geoprocessamento',
 
     # Python and Packages
