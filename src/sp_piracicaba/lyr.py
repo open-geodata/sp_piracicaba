@@ -6,12 +6,12 @@ import os
 import folium
 import webbrowser
 import geopandas as gpd
+from open_geodata import geo
 
 
 def macrozona():
     # Input
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    gdf = gpd.read_file(os.path.join(root, 'macrozonas.geojson'))
+    gdf = geo.load_dataset_others('sp_piracicaba', 'macrozonas.7z')
     gdf = gdf.to_crs(epsg=4326)
 
     # Set dictionary
@@ -91,8 +91,7 @@ def popup_macrozona(row):
 
 def perimetro_urbano():
     # Input
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    gdf = gpd.read_file(os.path.join(root, 'divisa_perimetro.geojson'))
+    gdf = geo.load_dataset_others('sp_piracicaba', 'divisa_perimetro.7z')
     gdf = gdf.to_crs(epsg=4326)
 
     # Layer
@@ -122,8 +121,7 @@ def perimetro_urbano():
 
 def divisa_municipal():
     # Input
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    gdf = gpd.read_file(os.path.join(root, 'divisa_municipal.geojson'))
+    gdf = geo.load_dataset_others('sp_piracicaba', 'divisa_municipal.7z')
     gdf = gdf.to_crs(epsg=4326)
 
     # Layer
@@ -145,8 +143,7 @@ def divisa_municipal():
 
 def divisa_urbano_rural():
     # Input
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    gdf = gpd.read_file(os.path.join(root, 'divisa_urbanorural.geojson'))
+    gdf = geo.load_dataset_others('sp_piracicaba', 'divisa_urbanorural.7z')
     gdf = gdf.to_crs(epsg=4326)
 
     # Set dictionary
@@ -174,8 +171,7 @@ def divisa_urbano_rural():
 
 def divisa_abairramento():
     # Input
-    root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'geo', 'sp_piracicaba'))
-    gdf = gpd.read_file(os.path.join(root, 'divisa_abairramento.geojson'))
+    gdf = geo.load_dataset_others('sp_piracicaba', 'divisa_abairramento.7z')
     gdf = gdf.to_crs(epsg=4326)
 
     # Layer
@@ -207,7 +203,7 @@ def divisa_abairramento():
 
 
 if __name__ == '__main__':
-    from src.open_geodata import geo, lyr
+    from open_geodata import geo, lyr
 
     # Create Maps
     m = folium.Map(
