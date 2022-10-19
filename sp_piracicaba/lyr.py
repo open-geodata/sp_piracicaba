@@ -1,6 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
+"""
+Plano Diretor de Piracicaba
+Configura Layers
 
+"""
 
 import os
 import folium
@@ -79,14 +81,14 @@ def popup_macrozona(row):
     }
     macrozona = row['Macrozona']
     description = descriptions[macrozona]
-    popup = """
+    return f"""
     <div>
     <h4>Plano Diretor de Piracicaba</h4>
     <h5>Lei Complementar nº 405/2019</h5>
-    <b>{}</b>
+    <b>{description}</b>
     </div>    
-    """.format(description)
-    return popup
+    """
+    
 
 
 def perimetro_urbano():
@@ -220,3 +222,4 @@ if __name__ == '__main__':
     map_file = os.path.join(down_path, 'map_example.html')
     m.save(map_file)
     webbrowser.open(map_file)
+    
