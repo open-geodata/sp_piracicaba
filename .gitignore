@@ -3,10 +3,10 @@
 .idea/
 
 # Dados
-src/sp_piracicaba/data/input
-src/sp_piracicaba/data/output/*
-!src/sp_piracicaba/data/output/maps/
-!src/sp_piracicaba/data/output/zips/
+sp_piracicaba/data/input
+sp_piracicaba/data/output/*
+!sp_piracicaba/data/output/maps/
+!sp_piracicaba/data/output/zips/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
