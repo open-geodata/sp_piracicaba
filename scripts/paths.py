@@ -1,26 +1,59 @@
+"""
 
-import os
+
+"""
+
+
 from pathlib import Path
 
-data_path = os.path.join('..', 'src', 'sp_piracicaba', 'data')
 
-input_path = os.path.join(data_path, 'input')
-os.makedirs(input_path, exist_ok=True)
+# Project Path
+project_path = Path(__file__).parents[1]
 
-input_path_cad = os.path.join(input_path, 'cad')
-os.makedirs(input_path_cad, exist_ok=True)
+# scrapy_path = project_path / 'scrapy'
+# scrapy_path.mkdir(exist_ok=True)
 
-output_path = os.path.join(data_path, 'output')
-os.makedirs(output_path, exist_ok=True)
+# logs_path = scrapy_path / 'logs'
+# logs_path.mkdir(exist_ok=True)
 
-output_path_map = os.path.join(output_path, 'maps')
-os.makedirs(output_path_map, exist_ok=True)
+# adds_path = scrapy_path / 'adds'
+# adds_path.mkdir(exist_ok=True)
 
-output_path_shp = os.path.join(output_path, 'shp')
-os.makedirs(output_path_shp, exist_ok=True)
 
-output_path_geo = os.path.join(output_path, 'geo')
-os.makedirs(output_path_geo, exist_ok=True)
+# Package Path
+package_path = project_path / 'sp_piracicaba'
 
-output_path_zips = os.path.join(output_path, 'zips')
-os.makedirs(output_path_zips, exist_ok=True)
+data_path = package_path / 'data'
+data_path.mkdir(exist_ok=True)
+
+input_path = data_path / 'input'
+input_path.mkdir(exist_ok=True)
+
+
+input_path_cad = input_path / 'cad'
+input_path_cad.mkdir(exist_ok=True)
+
+output_path = data_path / 'output'
+output_path.mkdir(exist_ok=True)
+
+output_path_geojson = output_path / 'geojson'
+output_path_geojson.mkdir(exist_ok=True)
+
+output_path_gpkg = output_path / 'gpkg'
+output_path_gpkg.mkdir(exist_ok=True)
+
+# output_path_tab = output_path / 'tab'
+# output_path_tab.mkdir(exist_ok=True)
+
+output_path_map = output_path / 'map'
+output_path_map.mkdir(exist_ok=True)
+
+output_path_shp = output_path / 'shp'
+output_path_shp.mkdir(exist_ok=True)
+
+output_path_zip = output_path / 'zips'
+output_path_zip.mkdir(exist_ok=True)
+
+
+if __name__ == '__main__':
+    print(project_path)
