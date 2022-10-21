@@ -11,7 +11,6 @@ include LICENSE
 # Remove all files under directories
 prune test
 prune sp_piracicaba/data/input
-prune sp_piracicaba/data/output/geo
 prune sp_piracicaba/data/output/gis
 prune sp_piracicaba/data/output/kml
 prune sp_piracicaba/data/output/map

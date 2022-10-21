@@ -13,7 +13,7 @@ from open_geodata import geo
 
 def macrozona():
     # Input
-    gdf = geo.load_dataset_others('sp_piracicaba', 'macrozonas.7z')
+    gdf = geo.load_dataset_from_package('sp_piracicaba', 'geo.macrozonas')
     gdf = gdf.to_crs(epsg=4326)
 
     # Set dictionary
@@ -93,7 +93,7 @@ def popup_macrozona(row):
 
 def perimetro_urbano():
     # Input
-    gdf = geo.load_dataset_others('sp_piracicaba', 'divisa_perimetro.7z')
+    gdf = geo.load_dataset_from_package('sp_piracicaba', 'geo.divisa_perimetro')
     gdf = gdf.to_crs(epsg=4326)
 
     # Layer
@@ -123,7 +123,7 @@ def perimetro_urbano():
 
 def divisa_municipal():
     # Input
-    gdf = geo.load_dataset_others('sp_piracicaba', 'divisa_municipal.7z')
+    gdf = geo.load_dataset_from_package('sp_piracicaba', 'geo.divisa_municipal')
     gdf = gdf.to_crs(epsg=4326)
 
     # Layer
@@ -145,7 +145,7 @@ def divisa_municipal():
 
 def divisa_urbano_rural():
     # Input
-    gdf = geo.load_dataset_others('sp_piracicaba', 'divisa_urbanorural.7z')
+    gdf = geo.load_dataset_from_package('sp_piracicaba', 'geo.divisa_urbanorural')
     gdf = gdf.to_crs(epsg=4326)
 
     # Set dictionary
@@ -173,7 +173,7 @@ def divisa_urbano_rural():
 
 def divisa_abairramento():
     # Input
-    gdf = geo.load_dataset_others('sp_piracicaba', 'divisa_abairramento.7z')
+    gdf = geo.load_dataset_from_package('sp_piracicaba', 'geo.divisa_abairramento')
     gdf = gdf.to_crs(epsg=4326)
 
     # Layer
