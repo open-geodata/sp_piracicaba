@@ -9,7 +9,7 @@ for line in open('requirements.txt'):
     if not li.startswith('#'):
         requirements.append(line.rstrip())
 
-VERSION = (0, 0, 15)
+VERSION = (0, 0, 16)
 __version__ = '.'.join(map(str, VERSION))
 
 setup(
@@ -37,7 +37,7 @@ setup(
 
     # Dados
     include_package_data=True,
-    package_data={'': ['data/output/zips/*.7z']},
+    package_data={'': ['data/output/geo/*.7z']},
 
     # Classificação
     classifiers=[
