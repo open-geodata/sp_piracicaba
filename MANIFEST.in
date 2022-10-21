@@ -5,7 +5,7 @@ include requirements.txt
 include LICENSE
 
 #
-graft src # Add all files under directories src
+#graft src # Add all files under directories src
 #graft data # Add all files under directories data
 
 # Remove all files under directories
