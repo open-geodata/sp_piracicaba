@@ -1,7 +1,6 @@
 # Plano Diretor de Piracicaba
 
-- [GitHub](https://github.com/open-geodata/sp_piracicaba)
-- [PyPi](https://pypi.org/project/sp-piracicaba/)
+[![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/open-geodata/sp_piracicaba)
 
 <br>
 
@@ -26,32 +25,6 @@ No arquivo não foi específicado o _datum_.
 
 ---
 
-### Como Usar?
-
-O repositório faz parte do projeto [**_OpenGeodata_**](https://pypi.org/project/open-geodata), que tem por objetivo compartilhar dados espaciais por meio de _packages_ do python.
-
-```bash
-# Install
-pip3 install open-geodata --upgrade
-pip3 install sp-piracicaba --upgrade
-```
-
-<br>
-
-Uma vez instalado os pacotes, é possível listar e carregar os _datasets_ disponíveis, com os comandos abaixo.
-
-```python
-# List Datasets from package (dataframes and geodataframes)
-geo.get_dataset_from_package('sp_piracicaba')
-
-# Load Dataset from package
-geo.load_dataset_from_package('sp_piracicaba', dataset_name)
-```
-
-<br>
-
----
-
-### _TODO_
+## _TODO_
 
 1. Atualizar os mapas conforme [IPPLAP – Instituto de Pesquisas e Planejamento de Piracicaba](http://www.ipplap.com.br/)

@@ -11,10 +11,10 @@ from pathlib import Path
 project_path = Path(__file__).parents[1]
 
 # Package Path
-package_path = project_path / 'sp_piracicaba'
+#package_path = project_path / 'sp_piracicaba'
 
 # Data
-data_path = package_path / 'data'
+data_path = project_path / 'data'
 data_path.mkdir(exist_ok=True)
 
 # Input

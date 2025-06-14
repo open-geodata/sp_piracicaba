@@ -2,11 +2,14 @@
 .vscode/
 .idea/
 
+# Lixo
+_lixo/
+
 # Dados
-sp_piracicaba/data/input
-sp_piracicaba/data/output/*
-!sp_piracicaba/data/output/maps/
-!sp_piracicaba/data/output/geo/
+data/input
+data/output/*
+!data/output/maps/
+!data/output/geo/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
